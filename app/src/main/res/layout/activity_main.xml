@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_height="match_parent"
-    android:layout_width="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="12dp"
         android:layout_margin="16dp"
+        android:padding="12dp"
         tools:context=".MainActivity">
 
         <com.google.android.material.textfield.TextInputLayout
@@ -19,33 +18,33 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/bill_value"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="@id/split_button"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/bill_value_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="numberDecimal"/>
+                android:inputType="numberDecimal" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/number_of_friends"
             android:layout_width="match_parent"
-            android:layout_marginTop="25dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:hint="@string/number_of_friends"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="@id/split_button"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/bill_value">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/number_of_friends_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number"/>
+                android:inputType="number" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -55,19 +54,19 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
             android:text="@string/split"
-            app:layout_constraintTop_toBottomOf="@id/number_of_friends"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintTop_toBottomOf="@id/number_of_friends" />
 
         <TextView
             android:id="@+id/amount_per_person"
-            android:layout_width="wrap_content"
             style="@style/Widget.BillSplitter.TextView"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/split_button"
-            tools:text="Amount per person : 10$"/>
+            tools:text="Amount per person : 10$" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

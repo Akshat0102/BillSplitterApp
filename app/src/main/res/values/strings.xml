@@ -3,4 +3,5 @@
     <string name="bill_value">Bill Value</string>
     <string name="number_of_friends">Number of Friends</string>
     <string name="split">Split</string>
+    <string name="amount_per">Amount Per Person: %s</string>
 </resources>
