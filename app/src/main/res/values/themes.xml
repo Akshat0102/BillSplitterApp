@@ -11,8 +11,10 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+        <!--Text Input Fields Style. -->
         <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+        <!--Switch Button Style. -->
+        <item name="switchStyle">@style/Widget.BillSplitter.CompoundButton.Switch</item>
 
     </style>
 </resources>
