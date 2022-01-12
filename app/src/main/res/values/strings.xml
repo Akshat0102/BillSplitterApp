@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Bill Splitter</string>
+    <string name="bill_value">Bill Value</string>
+    <string name="number_of_friends">Number of Friends</string>
+    <string name="split">Split</string>
 </resources>
